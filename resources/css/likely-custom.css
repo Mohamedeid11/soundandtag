@@ -1,0 +1,32 @@
+.likely {
+    margin: 24px auto;
+}
+.likely .likely__widget {
+    background-color: transparent;
+    border: 1px solid #63caf7;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.likely button.likely__button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    color: #fff;
+}
+.likely .likely__button {
+    padding: 0;
+}
+.likely-email:hover {
+    background-color: #c2b4b3;
+}
+.likely-copy:hover {
+    background-color: #28a745;
+}
+.likely-mob:hover {
+    background-color: #34373b;
+}

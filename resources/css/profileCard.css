@@ -1,0 +1,104 @@
+.single_team_member {
+    position: relative;
+}
+.single_team_member .team_member_info {
+    text-align: center;
+    margin-top: 26px;
+}
+@media (max-width: 991px) {
+    .single_team_member .team_member_info {
+        margin-top: 20px;
+    }
+}
+.single_team_member .team_member_info h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    font-family: Futura;
+}
+.single_team_member .team_member_info h4 a {
+    color: var(--secondary-color);
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.single_team_member .team_member_info h4 a:hover {
+    color: #ff7070;
+}
+.single_team_member.style_2 {
+    margin-bottom: 50px;
+}
+.single_team_member img {
+    object-fit: contain;
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+}
+.single_team_member img:hover {
+    filter: brightness(0.5);
+}
+@media screen and (min-width: 468px) {
+    .single_team_member img {
+        width: 130px;
+        height: 130px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .single_team_member img {
+        width: 210px;
+        height: 210px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .single_team_member img {
+        width: 130px;
+        height: 130px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .single_team_member img {
+        width: 160px;
+        height: 160px;
+    }
+}
+@media (max-width: 991px) {
+    .single_team_member.style_2 {
+        margin-bottom: 30px;
+    }
+}
+/* Sidebar part */
+@media (max-width: 991px) {
+    .sidebar_part {
+        margin-top: 50px;
+    }
+}
+.sidebar_part .single_sidebar {
+    margin-bottom: 60px;
+    position: relative;
+}
+@media (max-width: 991px) {
+    .sidebar_part .single_sidebar {
+        margin-bottom: 40px;
+    }
+}
+.sidebar_part .single_sidebar:last-child {
+    margin-bottom: 0;
+}
+.sidebar_part .single_sidebar input {
+    padding: 13px 30px;
+    background-color: var(--grey-color);
+    border-radius: 6px;
+    border: 1px solid var(--grey-color);
+    width: 100%;
+    color: #7d7d7d;
+}
+.sidebar_part .single_sidebar input::placeholder {
+    color: #7d7d7d;
+}
+.sidebar_part .single_sidebar i {
+    position: absolute;
+    top: 18px;
+    color: #7d7d7d;
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+.modal-content {
+    background: var(--background);
+}
+
+.modal-title,
+.close {
+    color: var(--light-color);
+}
+
+.divider {
+    position: relative;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.divider::after,
+.divider::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    left: calc(50% - 116px);
+    background: #bdbdbd;
+    top: 18px;
+}
+
+.divider::after {
+    left: unset;
+    right: calc(50% - 116px);
+}
+
+label {
+    position: relative;
+}
+.tooltip-text {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 6px;
+    z-index: 1;
+    font-size: 14px;
+    color: #000;
+    background: #fff;
+    font-weight: 300;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 50%);
+    width: 50vw;
+    min-width: 200px;
+    max-width: 460px;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease-in-out;
+}
+label:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.employees-table {
+    max-height: 500px
+}
+.employees-table .data-cell-actions {
+    display:flex;
+    border:0;
+    column-gap:4px;
+    align-items:center
+}
+.drag-box.over {
+    border: 3px dotted #666;
+}

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
+body {
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+}
+.footer_section .footer_nav ul li a {
+    font-size: 15px;
+}
+/* Home */
+.sidebar_part .single_sidebar input {
+    padding-left: 54px;
+}
+.sidebar_part .single_sidebar i {
+    left: 30px;
+}
+.team_member_part .members_corporate {
+    transform: translateX(-100%);
+}
+#account-type-corporate:checked ~ .members .members_corporate,
+#pricing-corporate:checked ~ .members .members_corporate {
+    transform: translateX(100%);
+}
+#account-type-corporate:checked ~ .members .members_personal,
+#pricing-corporate:checked ~ .members .members_personal {
+    transform: translateX(200%);
+}
+.acoount-type-check label::before {
+    transform: translateX(102%);
+}
+.acoount-type-check label:first-of-type::before {
+    transform: translateX(-102%);
+}
+/* Signup */
+.acoount-type-check label::before {
+    transform: translateX(102%);
+}
+.acoount-type-check.profile label::before {
+    transform: translateX(302%);
+}
+.acoount-type-check label:first-of-type::before {
+    transform: translateX(-102%);
+}
+/* Forms */
+.contact_section_content.pr_60 {
+    padding-left: 60px;
+}
+@media (max-width: 767.98px) {
+    .contact_section_content.pr_60 {
+        padding-left: 0;
+    }
+}
+/* Profile */
+.copy-card-data-left,
+.copy-card-data-right {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0 -15px;
+    padding: 16px;
+}
+.profile-toggle-btn:last-of-type {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.profile-toggle-btn:first-of-type {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.absolute-btn {
+    left: 16px;
+}
+@media screen and (min-width: 576px) {
+    .record-profile-card:not(.biography) {
+        padding-left: 55px !important;
+    }
+}
+/* Card toggle */
+.card-header button::after,
+.card-header button::before {
+    left: 8px;
+}
+/* Give it a try */
+.listen-btn-container button {
+    pointer-events: none;
+    transform: translate(35px, 20px);
+}

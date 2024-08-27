@@ -1,0 +1,20 @@
+{
+    "/js/web/custom.js": "/js/web/custom.js",
+    "/js/web/drag_drop.js": "/js/web/drag_drop.js",
+    "/css/web/rtl/style.css": "/css/web/rtl/style.css",
+    "/css/web/style.css": "/css/web/style.css",
+    "/css/web/home.css": "/css/web/home.css",
+    "/css/web/employees.css": "/css/web/employees.css",
+    "/css/web/edit-profile.css": "/css/web/edit-profile.css",
+    "/css/web/contact.css": "/css/web/contact.css",
+    "/css/web/card.css": "/css/web/card.css",
+    "/css/web/about.css": "/css/web/about.css",
+    "/css/web/ltr/style.css": "/css/web/ltr/style.css",
+    "/css/web/side-nav.css": "/css/web/side-nav.css",
+    "/css/web/likely-custom.css": "/css/web/likely-custom.css",
+    "/css/web/modal.css": "/css/web/modal.css",
+    "/css/web/profiles.css": "/css/web/profiles.css",
+    "/css/web/profileCard.css": "/css/web/profileCard.css",
+    "/css/web/profile.css": "/css/web/profile.css",
+    "/css/web/login.css": "/css/web/login.css"
+}

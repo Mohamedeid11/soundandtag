@@ -1,0 +1,8 @@
+Dear {{$user->username}}.
+
+Welcome to Sound&Tag, your trial has started
+After {{$trialPeriod}} you have to choose one of our plans to continue using the platform
+Details on our pricing is here: "{{route('web.get_pricing')}}"
+To upgrade go to "account status" on your account settings here: "{{route('account.status')}}"
+Regards.
+If you have any questions please feel free to contact us at support@soundandtag.com

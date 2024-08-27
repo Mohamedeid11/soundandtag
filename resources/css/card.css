@@ -1,0 +1,51 @@
+.contact_section_content h4 {
+    color: var(--secondary-color);
+}
+.card {
+    background-color: transparent;
+    transition: all 0.3 ease-in-out;
+}
+.card.active {
+    transform: scale(1.1);
+}
+.card-header {
+    color: var(--main-color);
+    background-color: var(--grey-color);
+}
+.card-header button {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    padding-right: 24px;
+}
+.card-header button::after,
+.card-header button::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--main-color);
+    transition: var(--transition);
+}
+.card-header button::before {
+    transform: rotate(90deg);
+    top: 49%;
+}
+.card-header button[aria-expanded="true"]::before {
+    transform: rotate(0);
+}
+.accordion-card {
+    color: #fff;
+}
+.card-body {
+    background: linear-gradient(68deg, #00101f 0%, #031839 53%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.card-body a {
+    color: var(--main-color);
+}

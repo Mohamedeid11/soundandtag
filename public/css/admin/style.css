@@ -1,0 +1,41 @@
+.logo img, .logo-sm img {
+    height: 50px;
+}
+.checkbox label::before {
+    -o-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    background-color: #37414e;
+    border-radius: 3px;
+    border: 1px solid #697d96;
+    content: "";
+    display: inline-block;
+    height: 17px;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+    width: 17px;
+    outline: none !important;
+}
+.checkbox label::after {
+    color: #98a4b9;
+    display: inline-block;
+    font-size: 11px;
+    height: 16px;
+    left: 0;
+    padding-top: 1px;
+    position: absolute;
+    top: 0;
+    width: 16px;
+}
+.checkbox label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+#sidebar-menu ul ul a {
+    color: rgba(42, 50, 60, 0.8);
+    display: block;
+}
+
+#sidebar-menu ul ul a:hover {
+    color: #2a323c;
+}

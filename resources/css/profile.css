@@ -1,0 +1,209 @@
+.disabled,
+[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+[v-cloak] {
+    display: none;
+}
+.base_color {
+    color: #ff7070 !important;
+}
+
+/* Profile title  */
+.profile-title {
+    margin-bottom: 80px;
+}
+.profile-title h5 {
+    font-family: Futura;
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 12px;
+}
+.profile-title h2 {
+    font-family: Futura;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--secondary-color);
+}
+.profile-title h2 span {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-style: italic;
+}
+@media only screen and (max-width: 991.98px) {
+    .profile-title h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .profile-title h2 span {
+        font-size: 26px;
+    }
+}
+
+.about_me_section {
+    position: relative;
+    z-index: 1;
+    background: var(--background);
+}
+.about_me_section .section_tittle {
+    margin-top: 40px;
+}
+.about_me_section.sec_padding {
+    padding: 105px 0 120px;
+}
+.profile-img {
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+}
+.profile-company-img {
+    width: 50px;
+    height: 50px;
+}
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+    .profile-img {
+        width: 215px;
+        height: 215px;
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .profile-img {
+        width: 135px;
+        height: 135px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+.record-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--secondary-color);
+    border-radius: 50px;
+}
+@media screen and (min-width: 576px) {
+    .record-card:not(.biography) {
+        min-height: 50px;
+    }
+    .record-card--meaning {
+        padding-right: 60px !important;
+    }
+}
+.record-card-text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.35rem;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+}
+.biography .record-card-text span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    transition: all 0.4s ease-in-out;
+    word-break: break-word;
+}
+.biography .record-card-text label {
+    color: #007BFF;
+    margin-left: auto;
+    cursor: pointer;
+}
+#biography-more:checked ~ span {
+    line-clamp: initial;
+    -webkit-line-clamp: initial;
+}
+.record-heading {
+    color: var(--secondary-color);
+}
+.listen-btn-container {
+    background: linear-gradient(#2988b1 14.38%, #64c6f2 100%);
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.listen-btn {
+    border: 0;
+    background: radial-gradient(circle, #64c6f2, #257293 85.6%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.record-progress {
+    display: flex;
+    height: 1px;
+    line-height: 0;
+    background-color: var(--light-color);
+    border-radius: 0.25rem;
+}
+.record-progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+}
+.record-progress-bar.active {
+    animation-name: progressAnimation;
+    animation-timing-function: linear;
+    height: 3px;
+    margin-top: -1px;
+}
+.copy-card img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.3);
+}
+@keyframes progressAnimation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.profile-toggle-btn {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    border: 2px solid var(--secondary-color);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+#pronunciation:checked ~ .row label[for="pronunciation"],
+#public-data:checked ~ .row label[for="public-data"] {
+    background: var(--secondary-color);
+    color: var(--main-color);
+}
+.pronunciation-section,
+.public-data-section {
+    display: none;
+}
+#pronunciation:checked ~ .pronunciation-section,
+#public-data:checked ~ .public-data-section {
+    display: block;
+}

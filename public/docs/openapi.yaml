@@ -1,0 +1,830 @@
+openapi: 3.0.3
+info:
+  title: 'Etichetta API documentation'
+  description: 'A documentation for the api endpoints available in etichetta'
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost/soundid'
+paths:
+  '/api/admin/countries/toggle_active/{country_id}':
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+    parameters:
+      -
+        in: path
+        name: country_id
+        description: 'The ID of the country.'
+        example: autem
+        required: true
+        schema:
+          type: string
+  '/api/admin/users/toggle_active/{user_id}':
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+    parameters:
+      -
+        in: path
+        name: user_id
+        description: 'The ID of the user.'
+        example: quae
+        required: true
+        schema:
+          type: string
+  /api/profile/details:
+    get:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        404:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: ''
+                  exception: Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+                  file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php
+                  line: 43
+                  trace:
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php
+                      line: 162
+                      function: handleMatchedRoute
+                      class: Illuminate\Routing\AbstractRouteCollection
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                      line: 647
+                      function: match
+                      class: Illuminate\Routing\RouteCollection
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                      line: 636
+                      function: findRoute
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                      line: 625
+                      function: dispatchToRoute
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                      line: 166
+                      function: dispatch
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 128
+                      function: 'Illuminate\Foundation\Http\{closure}'
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
+                      line: 60
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 167
+                      function: handle
+                      class: Barryvdh\Debugbar\Middleware\InjectDebugbar
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
+                      line: 21
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 167
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
+                      line: 21
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 167
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php
+                      line: 27
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 167
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php
+                      line: 86
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 167
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/fruitcake/laravel-cors/src/HandleCors.php
+                      line: 37
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 167
+                      function: handle
+                      class: Fruitcake\Cors\HandleCors
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/fideloper/proxy/src/TrustProxies.php
+                      line: 57
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 167
+                      function: handle
+                      class: Fideloper\Proxy\TrustProxies
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                      line: 103
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                      line: 141
+                      function: then
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                      line: 110
+                      function: sendRequestThroughRouter
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 287
+                      function: handle
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 275
+                      function: callLaravelOrLumenRoute
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 86
+                      function: makeApiCall
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 44
+                      function: makeResponseCall
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                      line: 34
+                      function: makeResponseCallIfConditionsPass
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                      line: 225
+                      function: __invoke
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                      line: 182
+                      function: iterateThroughStrategies
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                      line: 116
+                      function: fetchResponses
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                      line: 118
+                      function: processRoute
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                      line: 75
+                      function: extractEndpointsInfoFromLaravelApp
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                      line: 51
+                      function: extractEndpointsInfoAndWriteToDisk
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php
+                      line: 39
+                      function: get
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                      line: 36
+                      function: handle
+                      class: Knuckles\Scribe\Commands\GenerateDocumentation
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/Util.php
+                      line: 40
+                      function: 'Illuminate\Container\{closure}'
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                      line: 93
+                      function: unwrapIfClosure
+                      class: Illuminate\Container\Util
+                      type: '::'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                      line: 37
+                      function: callBoundMethod
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/Container.php
+                      line: 611
+                      function: call
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                      line: 136
+                      function: call
+                      class: Illuminate\Container\Container
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/symfony/console/Command/Command.php
+                      line: 256
+                      function: execute
+                      class: Illuminate\Console\Command
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                      line: 121
+                      function: run
+                      class: Symfony\Component\Console\Command\Command
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/symfony/console/Application.php
+                      line: 971
+                      function: run
+                      class: Illuminate\Console\Command
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/symfony/console/Application.php
+                      line: 290
+                      function: doRunCommand
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/symfony/console/Application.php
+                      line: 166
+                      function: doRun
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Console/Application.php
+                      line: 92
+                      function: run
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php
+                      line: 129
+                      function: run
+                      class: Illuminate\Console\Application
+                      type: '->'
+                    -
+                      file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/artisan
+                      line: 37
+                      function: handle
+                      class: Illuminate\Foundation\Console\Kernel
+                      type: '->'
+                properties:
+                  message:
+                    type: string
+                    example: ''
+                  exception:
+                    type: string
+                    example: Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+                  file:
+                    type: string
+                    example: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/AbstractRouteCollection.php
+                  line:
+                    type: integer
+                    example: 43
+                  trace:
+                    type: array
+                    example:
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/RouteCollection.php
+                        line: 162
+                        function: handleMatchedRoute
+                        class: Illuminate\Routing\AbstractRouteCollection
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                        line: 647
+                        function: match
+                        class: Illuminate\Routing\RouteCollection
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                        line: 636
+                        function: findRoute
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Routing/Router.php
+                        line: 625
+                        function: dispatchToRoute
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                        line: 166
+                        function: dispatch
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 128
+                        function: 'Illuminate\Foundation\Http\{closure}'
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php
+                        line: 60
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 167
+                        function: handle
+                        class: Barryvdh\Debugbar\Middleware\InjectDebugbar
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
+                        line: 21
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 167
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php
+                        line: 21
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 167
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php
+                        line: 27
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 167
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php
+                        line: 86
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 167
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/fruitcake/laravel-cors/src/HandleCors.php
+                        line: 37
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 167
+                        function: handle
+                        class: Fruitcake\Cors\HandleCors
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/fideloper/proxy/src/TrustProxies.php
+                        line: 57
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 167
+                        function: handle
+                        class: Fideloper\Proxy\TrustProxies
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php
+                        line: 103
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                        line: 141
+                        function: then
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php
+                        line: 110
+                        function: sendRequestThroughRouter
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 287
+                        function: handle
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 275
+                        function: callLaravelOrLumenRoute
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 86
+                        function: makeApiCall
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 44
+                        function: makeResponseCall
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php
+                        line: 34
+                        function: makeResponseCallIfConditionsPass
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                        line: 225
+                        function: __invoke
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                        line: 182
+                        function: iterateThroughStrategies
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php
+                        line: 116
+                        function: fetchResponses
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                        line: 118
+                        function: processRoute
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                        line: 75
+                        function: extractEndpointsInfoFromLaravelApp
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php
+                        line: 51
+                        function: extractEndpointsInfoAndWriteToDisk
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php
+                        line: 39
+                        function: get
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                        line: 36
+                        function: handle
+                        class: Knuckles\Scribe\Commands\GenerateDocumentation
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/Util.php
+                        line: 40
+                        function: 'Illuminate\Container\{closure}'
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                        line: 93
+                        function: unwrapIfClosure
+                        class: Illuminate\Container\Util
+                        type: '::'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php
+                        line: 37
+                        function: callBoundMethod
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Container/Container.php
+                        line: 611
+                        function: call
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                        line: 136
+                        function: call
+                        class: Illuminate\Container\Container
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/symfony/console/Command/Command.php
+                        line: 256
+                        function: execute
+                        class: Illuminate\Console\Command
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Console/Command.php
+                        line: 121
+                        function: run
+                        class: Symfony\Component\Console\Command\Command
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/symfony/console/Application.php
+                        line: 971
+                        function: run
+                        class: Illuminate\Console\Command
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/symfony/console/Application.php
+                        line: 290
+                        function: doRunCommand
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/symfony/console/Application.php
+                        line: 166
+                        function: doRun
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Console/Application.php
+                        line: 92
+                        function: run
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php
+                        line: 129
+                        function: run
+                        class: Illuminate\Console\Application
+                        type: '->'
+                      -
+                        file: /home/nouser/Projects/freelancer/other/hamayel/sound_tag/SoundID/artisan
+                        line: 37
+                        function: handle
+                        class: Illuminate\Foundation\Console\Kernel
+                        type: '->'
+                    items:
+                      type: object
+      tags:
+        - Endpoints
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                record_type_id:
+                  type: integer
+                  description: 'the record_type.id.'
+                  example: 1
+                text_representation:
+                  type: string
+                  description: 'the text value. Must be at least 10 characters.'
+                  example: idtznju
+                record_data:
+                  type: string
+                  description: 'the audio as bas664 data.'
+                  example: dolores
+              required:
+                - record_type_id
+                - text_representation
+                - record_data
+  /api/get_token:
+    post:
+      summary: ''
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  description: 'the username'
+                  example: id
+                password:
+                  type: string
+                  description: 'the password'
+                  example: voluptatem
+      security: []
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: ''
+security:
+  -
+    default: []

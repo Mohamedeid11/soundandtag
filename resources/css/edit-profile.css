@@ -1,0 +1,119 @@
+.disabled,
+[disabled] {
+    cursor: not-allowed !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+[v-cloak] {
+    display: none;
+}
+.about_me_section {
+    position: relative;
+    z-index: 1;
+    background: var(--background);
+}
+.about_me_section .section_tittle {
+    margin-top: 40px;
+}
+.record-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid var(--secondary-color);
+    border-radius: 50px;
+}
+@media screen and (min-width: 576px) {
+    .record-card {
+        height: 50px;
+    }
+}
+.record-card-text,
+.record-card-text-muted {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.35rem;
+    /* word-break: break-all; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.record-card-text-muted {
+    color: rgba(255, 255, 255, 0.5);
+}
+.record-save-btn {
+    color: rgb(255, 112, 112);
+    background: transparent;
+    border: 0;
+}
+.listen-btn-container {
+    background: linear-gradient(#2988b1 14.38%, #64c6f2 100%);
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.listen-btn {
+    border: 0;
+    background: radial-gradient(circle, #64c6f2, #257293 85.6%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.record-icon-norecord {
+    color: rgb(255, 112, 112);
+}
+@media (min-width: 991px) {
+    .about_me_section .section_tittle {
+        margin-top: 70px;
+    }
+}
+.about_me_section.sec_padding {
+    padding: 105px 0 120px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .about_me_section.sec_padding {
+        padding: 60px 0 80px;
+    }
+}
+.sweet-alert {
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px 6px;
+    margin-left: 0;
+    transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+    .sweet-alert {
+        transform: none;
+    }
+}
+.sweet-alert .lead {
+    margin-bottom: 16px;
+}
+
+@keyframes showSweetAlert {
+    0% {
+        transform: translateX(-50%) scale(0.7);
+        -webkit-transform: translateX(-50%) scale(0.7);
+    }
+    45% {
+        transform: translateX(-50%) scale(1.05);
+        -webkit-transform: translateX(-50%) scale(1.05);
+    }
+    80% {
+        transform: translateX(-50%) scale(0.95);
+        -webkit-transform: translateX(-50%) scale(0.95);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+        -webkit-transform: translateX(-50%) scale(1);
+    }
+}
+
+@keyframes hideSweetAlert {
+    0% {
+        transform: translateX(-50%) scale(1);
+        -webkit-transform: translateX(-50%) scale(1);
+    }
+    100% {
+        transform: translateX(-50%) scale(0.5);
+        -webkit-transform: translateX(-50%) scale(0.5);
+    }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "question": "What is Sound&Tag?",
+        "answer": "<p class='text-white'>Sound&Tag is a cloud service for recording and playback of personal and business names, to help with the correct pronunciation.</p>"
+    },
+    {
+        "question": "Where I can use my Sound&Tag card?",
+        "answer": "<p class='text-white'>You can copy your profile card and paste it in any agent that supports HTML markup such as email or a webpage. You can also embed a link to the record anywhere it is supported, such as social media profiles.</p>"
+    },
+    {
+        "question": "Can I get a physical Soun&Tag card?",
+        "answer": "<p class='text-white'>No, but you can generate a QR code of your card which can be downloaded in PNG format for inclusion on a printed business card. This allows the holder of the card to scan the code and listen to your Sound&Tag card recording.<p>"
+    },
+    {
+        "question": "What personal information is stored?",
+        "answer": "<p class='text-white'>Sound&Tag stores only the data you provide when registering: name (in text and sound), email, password and country</p>"
+    },
+    {
+        "question": "What personal information is shared with other users and the public?",
+        "answer": "<p class='text-white'>Other registered Sound&Tag users and the public can see your name, email, avatar and records.</p>"
+    }
+]

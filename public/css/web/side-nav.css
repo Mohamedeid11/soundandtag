@@ -1,0 +1,1 @@
+.side-nav a{color:var(--light-color);position:relative;transition:var(--transition)}.side-nav a:before{background-color:var(--secondary-color);bottom:0;content:"";height:1px;left:0;position:absolute;top:unset;transition:var(--transition);width:0}.side-nav a.active:before,.side-nav a:hover:before{width:100%}.side-nav a.active,.side-nav a:hover{color:var(--secondary-color)}
